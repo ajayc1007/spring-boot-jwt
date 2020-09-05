@@ -1,4 +1,4 @@
-package murraco.model;
+package jwt.model;
 
 import org.springframework.security.core.GrantedAuthority;
 

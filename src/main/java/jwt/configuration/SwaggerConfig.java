@@ -1,4 +1,4 @@
-package murraco.configuration;
+package jwt.configuration;
 
 import java.util.Arrays;
 import java.util.Collections;

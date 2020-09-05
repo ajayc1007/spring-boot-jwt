@@ -1,4 +1,4 @@
-package murraco;
+package jwt;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -10,9 +10,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-import murraco.model.Role;
-import murraco.model.User;
-import murraco.service.UserService;
+import jwt.model.Role;
+import jwt.model.User;
+import jwt.service.UserService;
 
 @SpringBootApplication
 public class JwtAuthServiceApp implements CommandLineRunner {

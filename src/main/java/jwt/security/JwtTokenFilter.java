@@ -1,4 +1,4 @@
-package murraco.security;
+package jwt.security;
 
 import java.io.IOException;
 
@@ -13,7 +13,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.filter.GenericFilterBean;
 
-import murraco.exception.CustomException;
+import jwt.exception.CustomException;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 // We should use OncePerRequestFilter since we are doing a database call, there is no point in doing this more than once

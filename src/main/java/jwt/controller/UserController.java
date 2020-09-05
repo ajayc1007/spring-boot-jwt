@@ -1,4 +1,4 @@
-package murraco.controller;
+package jwt.controller;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -20,10 +20,10 @@ import io.swagger.annotations.ApiParam;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import io.swagger.annotations.Authorization;
-import murraco.dto.UserDataDTO;
-import murraco.dto.UserResponseDTO;
-import murraco.model.User;
-import murraco.service.UserService;
+import jwt.dto.UserDataDTO;
+import jwt.dto.UserResponseDTO;
+import jwt.model.User;
+import jwt.service.UserService;
 
 @RestController
 @RequestMapping("/users")

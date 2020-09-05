@@ -1,9 +1,9 @@
-package murraco.dto;
+package jwt.dto;
 
 import java.util.List;
 
 import io.swagger.annotations.ApiModelProperty;
-import murraco.model.Role;
+import jwt.model.Role;
 
 public class UserDataDTO {
   
