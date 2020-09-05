@@ -15,15 +15,17 @@ import jwt.model.User;
 import jwt.service.UserService;
 
 @SpringBootApplication
-public class JwtAuthServiceApp implements CommandLineRunner {
+public class JwtAuthServiceApp // implements CommandLineRunner
+{
 
-  @Autowired
-  UserService userService;
+  //@Autowired
+  //UserService userService;
 
   public static void main(String[] args) {
     SpringApplication.run(JwtAuthServiceApp.class, args);
   }
 
+  /*
   @Bean
   public ModelMapper modelMapper() {
     return new ModelMapper();
@@ -47,5 +49,5 @@ public class JwtAuthServiceApp implements CommandLineRunner {
 
     userService.signup(client);
   }
-
+	*/
 }

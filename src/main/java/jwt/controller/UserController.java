@@ -20,8 +20,8 @@ import io.swagger.annotations.ApiParam;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 import io.swagger.annotations.Authorization;
-import jwt.dto.UserDataDTO;
-import jwt.dto.UserResponseDTO;
+//import jwt.dto.UserDataDTO;
+//import jwt.dto.UserResponseDTO;
 import jwt.model.User;
 import jwt.service.UserService;
 
@@ -33,9 +33,11 @@ public class UserController {
   @Autowired
   private UserService userService;
 
+  /*
   @Autowired
   private ModelMapper modelMapper;
-
+	*/
+  
   @PostMapping("/signin")
   @ApiOperation(value = "${UserController.signin}")
   @ApiResponses(value = {//
@@ -47,15 +49,19 @@ public class UserController {
     return userService.signin(username, password);
   }
 
+  /*
   @PostMapping("/signup")
   @ApiOperation(value = "${UserController.signup}")
   @ApiResponses(value = {//
       @ApiResponse(code = 400, message = "Something went wrong"), //
       @ApiResponse(code = 403, message = "Access denied"), //
       @ApiResponse(code = 422, message = "Username is already in use")})
+  
+  
   public String signup(@ApiParam("Signup User") @RequestBody UserDataDTO user) {
     return userService.signup(modelMapper.map(user, User.class));
   }
+  
 
   @DeleteMapping(value = "/{username}")
   @PreAuthorize("hasRole('ROLE_ADMIN')")
@@ -93,10 +99,12 @@ public class UserController {
     return modelMapper.map(userService.whoami(req), UserResponseDTO.class);
   }
 
+
+  
   @GetMapping("/refresh")
   @PreAuthorize("hasRole('ROLE_ADMIN') or hasRole('ROLE_CLIENT')")
   public String refresh(HttpServletRequest req) {
     return userService.refresh(req.getRemoteUser());
   }
-
+	*/
 }

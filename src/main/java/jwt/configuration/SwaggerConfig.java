@@ -1,4 +1,4 @@
-package jwt.configuration;
+/*package jwt.configuration;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -73,3 +73,4 @@ public class SwaggerConfig {
   }
 
 }
+*/
